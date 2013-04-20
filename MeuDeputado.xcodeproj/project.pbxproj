@@ -59,6 +59,7 @@
 		53ED950317222CE200208C44 /* MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 53ED941017222CE100208C44 /* MagicalRecord.m */; };
 		53ED957717222F4500208C44 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53ED957617222F4500208C44 /* CoreData.framework */; };
 		53ED957A172236C600208C44 /* RankingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53ED9579172236C600208C44 /* RankingViewController.m */; };
+		73F1FFD71722660E007C88AB /* TelaQueMostraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73F1FFD61722660E007C88AB /* TelaQueMostraViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -162,6 +163,8 @@
 		53ED957617222F4500208C44 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		53ED9578172236C600208C44 /* RankingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RankingViewController.h; path = MeuDeputado/RankingViewController.h; sourceTree = "<group>"; };
 		53ED9579172236C600208C44 /* RankingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RankingViewController.m; path = MeuDeputado/RankingViewController.m; sourceTree = "<group>"; };
+		73F1FFD51722660E007C88AB /* TelaQueMostraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TelaQueMostraViewController.h; sourceTree = "<group>"; };
+		73F1FFD61722660E007C88AB /* TelaQueMostraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TelaQueMostraViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +236,8 @@
 				53D9CD2C172215E300EDFE11 /* DDFirstViewController.h */,
 				53D9CD2D172215E300EDFE11 /* DDFirstViewController.m */,
 				53D9CD2F172215E300EDFE11 /* first.png */,
+				73F1FFD51722660E007C88AB /* TelaQueMostraViewController.h */,
+				73F1FFD61722660E007C88AB /* TelaQueMostraViewController.m */,
 				53D9CD31172215E300EDFE11 /* first@2x.png */,
 				53D9CD33172215E300EDFE11 /* DDSecondViewController.h */,
 				53D9CD34172215E300EDFE11 /* DDSecondViewController.m */,
@@ -554,6 +559,7 @@
 				53ED950217222CE200208C44 /* MagicalRecord+ShorthandSupport.m in Sources */,
 				53ED950317222CE200208C44 /* MagicalRecord.m in Sources */,
 				53ED957A172236C600208C44 /* RankingViewController.m in Sources */,
+				73F1FFD71722660E007C88AB /* TelaQueMostraViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
