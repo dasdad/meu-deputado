@@ -7,12 +7,21 @@
 //
 
 #import "DDAppDelegate.h"
+#import "Deputado.h"
+#import "MagicalRecordShorthand.h"
+#import "NSManagedObjectModel+MagicalRecord.h"
 
 @implementation DDAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    [MagicalRecord setupCoreDataStackWithAutoMigratingSqliteStoreNamed:@"model.sqlite"];
+    
+    Deputado *deputado = [Deputado MR_createEntity];
+    deputado.nome = @"nome";
+    
+    NSArray *deputados = [Deputado MR_findAll];
+    NSLog(@"Contador %d", [deputados count]);
     return YES;
 }
 							
