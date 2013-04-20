@@ -1,20 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12C60" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="Deputado" syncable="YES">
+    <entity name="Deputado" representedClassName="Deputado" syncable="YES">
         <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="estado" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="favorito" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="foto" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gabinete" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="nascimento" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nomeParlamentar" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numDeFaltas" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="numeDeSessoes" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="partido" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="presenca" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
-        <attribute name="quantidadeVotosNao" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
-        <attribute name="quantidadeVotosSim" optional="YES" attributeType="Integer 32" defaultValueString="0.0" syncable="YES"/>
         <attribute name="telefone" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="totalDeSessoes" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Ranking" representedClassName="Ranking" syncable="YES">
+        <attribute name="estado" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="foto" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idDeputado" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numFaltas" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="ordem" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="partido" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rank" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Deputado" positionX="-2259" positionY="-1287" width="128" height="223"/>
+        <element name="Deputado" positionX="-2259" positionY="-1287" width="128" height="240"/>
+        <element name="Ranking" positionX="160" positionY="192" width="128" height="165"/>
     </elements>
 </model>

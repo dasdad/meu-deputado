@@ -29,6 +29,8 @@
 		53D9CD4B172215E300EDFE11 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 53D9CD49172215E300EDFE11 /* InfoPlist.strings */; };
 		53D9CD4E172215E300EDFE11 /* MeuDeputadoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D9CD4D172215E300EDFE11 /* MeuDeputadoTests.m */; };
 		53D9CD5A1722188D00EDFE11 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 53D9CD581722188D00EDFE11 /* Model.xcdatamodeld */; };
+		53ED93CD17222A9400208C44 /* Deputado.m in Sources */ = {isa = PBXBuildFile; fileRef = 53ED93CC17222A9400208C44 /* Deputado.m */; };
+		53ED93D017222A9500208C44 /* Ranking.m in Sources */ = {isa = PBXBuildFile; fileRef = 53ED93CF17222A9500208C44 /* Ranking.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,10 @@
 		53D9CD4C172215E300EDFE11 /* MeuDeputadoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeuDeputadoTests.h; sourceTree = "<group>"; };
 		53D9CD4D172215E300EDFE11 /* MeuDeputadoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeuDeputadoTests.m; sourceTree = "<group>"; };
 		53D9CD591722188D00EDFE11 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		53ED93CB17222A9400208C44 /* Deputado.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deputado.h; sourceTree = "<group>"; };
+		53ED93CC17222A9400208C44 /* Deputado.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deputado.m; sourceTree = "<group>"; };
+		53ED93CE17222A9500208C44 /* Ranking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ranking.h; sourceTree = "<group>"; };
+		53ED93CF17222A9500208C44 /* Ranking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ranking.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +190,10 @@
 			isa = PBXGroup;
 			children = (
 				53D9CD581722188D00EDFE11 /* Model.xcdatamodeld */,
+				53ED93CE17222A9500208C44 /* Ranking.h */,
+				53ED93CF17222A9500208C44 /* Ranking.m */,
+				53ED93CB17222A9400208C44 /* Deputado.h */,
+				53ED93CC17222A9400208C44 /* Deputado.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -308,6 +318,8 @@
 				53D9CD2E172215E300EDFE11 /* DDFirstViewController.m in Sources */,
 				53D9CD35172215E300EDFE11 /* DDSecondViewController.m in Sources */,
 				53D9CD5A1722188D00EDFE11 /* Model.xcdatamodeld in Sources */,
+				53ED93CD17222A9400208C44 /* Deputado.m in Sources */,
+				53ED93D017222A9500208C44 /* Ranking.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,6 +500,7 @@
 				53D9CD53172215E300EDFE11 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		53D9CD54172215E300EDFE11 /* Build configuration list for PBXNativeTarget "MeuDeputadoTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +509,7 @@
 				53D9CD56172215E300EDFE11 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
