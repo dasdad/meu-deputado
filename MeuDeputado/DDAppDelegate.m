@@ -11,7 +11,7 @@
 #import "MagicalRecordShorthand.h"
 #import "NSManagedObjectModel+MagicalRecord.h"
 #import "Ranking.h"
-
+#import "DDServerConnector.h"
 
 @implementation DDAppDelegate
 
@@ -37,6 +37,12 @@
         ranking.ordem = [NSNumber numberWithInteger:i];
         ranking.rank = [NSNumber numberWithInteger:i/10];
     }
+    
+
+    NSArray *deputados = [Deputado MR_findAll];
+    NSLog(@"Contador %d", [deputados count]);
+    
+    [DDServerConnector test];
     
     return YES;
 }
