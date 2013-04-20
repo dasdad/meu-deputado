@@ -23,7 +23,7 @@
 @property (nonatomic, retain) NSString * telefone;
 @property (nonatomic, retain) NSNumber * numeDeSessoes;
 @property (nonatomic, retain) NSString * nomeParlamentar;
-@property (nonatomic, retain) NSString *  gabinete;
+@property (nonatomic, retain) NSString*  gabinete;
 @property (nonatomic, retain) NSNumber * numDeFaltas;
 
 @end

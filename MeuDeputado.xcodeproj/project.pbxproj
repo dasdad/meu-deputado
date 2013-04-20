@@ -20,7 +20,7 @@
 		53D9CD2E172215E300EDFE11 /* DDFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D9CD2D172215E300EDFE11 /* DDFirstViewController.m */; };
 		53D9CD30172215E300EDFE11 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 53D9CD2F172215E300EDFE11 /* first.png */; };
 		53D9CD32172215E300EDFE11 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53D9CD31172215E300EDFE11 /* first@2x.png */; };
-		53D9CD35172215E300EDFE11 /* DDSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D9CD34172215E300EDFE11 /* DDSecondViewController.m */; };
+		53D9CD35172215E300EDFE11 /* DDListDeputadosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D9CD34172215E300EDFE11 /* DDListDeputadosViewController.m */; };
 		53D9CD37172215E300EDFE11 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 53D9CD36172215E300EDFE11 /* second.png */; };
 		53D9CD39172215E300EDFE11 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53D9CD38172215E300EDFE11 /* second@2x.png */; };
 		53D9CD41172215E300EDFE11 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53D9CD40172215E300EDFE11 /* SenTestingKit.framework */; };
@@ -59,6 +59,9 @@
 		53ED950317222CE200208C44 /* MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 53ED941017222CE100208C44 /* MagicalRecord.m */; };
 		53ED957717222F4500208C44 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53ED957617222F4500208C44 /* CoreData.framework */; };
 		53ED957A172236C600208C44 /* RankingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53ED9579172236C600208C44 /* RankingViewController.m */; };
+		53ED95821722493800208C44 /* DDDetalheViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53ED95811722493800208C44 /* DDDetalheViewController.m */; };
+		53ED95841722623100208C44 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53ED95831722623100208C44 /* SDWebImage.framework */; };
+		53ED95861722625F00208C44 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53ED95851722625F00208C44 /* ImageIO.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,8 +93,8 @@
 		53D9CD2D172215E300EDFE11 /* DDFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDFirstViewController.m; sourceTree = "<group>"; };
 		53D9CD2F172215E300EDFE11 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		53D9CD31172215E300EDFE11 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		53D9CD33172215E300EDFE11 /* DDSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDSecondViewController.h; sourceTree = "<group>"; };
-		53D9CD34172215E300EDFE11 /* DDSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDSecondViewController.m; sourceTree = "<group>"; };
+		53D9CD33172215E300EDFE11 /* DDListDeputadosViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDListDeputadosViewController.h; sourceTree = "<group>"; };
+		53D9CD34172215E300EDFE11 /* DDListDeputadosViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDListDeputadosViewController.m; sourceTree = "<group>"; };
 		53D9CD36172215E300EDFE11 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		53D9CD38172215E300EDFE11 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		53D9CD3F172215E300EDFE11 /* MeuDeputadoTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeuDeputadoTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,6 +165,10 @@
 		53ED957617222F4500208C44 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		53ED9578172236C600208C44 /* RankingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RankingViewController.h; path = MeuDeputado/RankingViewController.h; sourceTree = "<group>"; };
 		53ED9579172236C600208C44 /* RankingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RankingViewController.m; path = MeuDeputado/RankingViewController.m; sourceTree = "<group>"; };
+		53ED95801722493800208C44 /* DDDetalheViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDDetalheViewController.h; sourceTree = "<group>"; };
+		53ED95811722493800208C44 /* DDDetalheViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDDetalheViewController.m; sourceTree = "<group>"; };
+		53ED95831722623100208C44 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = "<group>"; };
+		53ED95851722625F00208C44 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,10 +176,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53ED95861722625F00208C44 /* ImageIO.framework in Frameworks */,
 				53ED957717222F4500208C44 /* CoreData.framework in Frameworks */,
 				53D9CD12172215E300EDFE11 /* UIKit.framework in Frameworks */,
 				53D9CD14172215E300EDFE11 /* Foundation.framework in Frameworks */,
 				53D9CD16172215E300EDFE11 /* CoreGraphics.framework in Frameworks */,
+				53ED95841722623100208C44 /* SDWebImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +222,8 @@
 		53D9CD10172215E300EDFE11 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				53ED95851722625F00208C44 /* ImageIO.framework */,
+				53ED95831722623100208C44 /* SDWebImage.framework */,
 				53ED957617222F4500208C44 /* CoreData.framework */,
 				53D9CD11172215E300EDFE11 /* UIKit.framework */,
 				53D9CD13172215E300EDFE11 /* Foundation.framework */,
@@ -225,6 +236,8 @@
 		53D9CD17172215E300EDFE11 /* MeuDeputado */ = {
 			isa = PBXGroup;
 			children = (
+				53ED957F1722490800208C44 /* Detalhe */,
+				53ED957B1722418000208C44 /* Deputados */,
 				53ED93D117222CE100208C44 /* External */,
 				53D9CD57172217CC00EDFE11 /* Models */,
 				53D9CD20172215E300EDFE11 /* DDAppDelegate.h */,
@@ -234,8 +247,6 @@
 				53D9CD2D172215E300EDFE11 /* DDFirstViewController.m */,
 				53D9CD2F172215E300EDFE11 /* first.png */,
 				53D9CD31172215E300EDFE11 /* first@2x.png */,
-				53D9CD33172215E300EDFE11 /* DDSecondViewController.h */,
-				53D9CD34172215E300EDFE11 /* DDSecondViewController.m */,
 				53D9CD36172215E300EDFE11 /* second.png */,
 				53D9CD38172215E300EDFE11 /* second@2x.png */,
 				53D9CD18172215E300EDFE11 /* Supporting Files */,
@@ -405,6 +416,24 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
+		53ED957B1722418000208C44 /* Deputados */ = {
+			isa = PBXGroup;
+			children = (
+				53D9CD33172215E300EDFE11 /* DDListDeputadosViewController.h */,
+				53D9CD34172215E300EDFE11 /* DDListDeputadosViewController.m */,
+			);
+			name = Deputados;
+			sourceTree = "<group>";
+		};
+		53ED957F1722490800208C44 /* Detalhe */ = {
+			isa = PBXGroup;
+			children = (
+				53ED95801722493800208C44 /* DDDetalheViewController.h */,
+				53ED95811722493800208C44 /* DDDetalheViewController.m */,
+			);
+			name = Detalhe;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -523,7 +552,7 @@
 				53D9CD1E172215E300EDFE11 /* main.m in Sources */,
 				53D9CD22172215E300EDFE11 /* DDAppDelegate.m in Sources */,
 				53D9CD2E172215E300EDFE11 /* DDFirstViewController.m in Sources */,
-				53D9CD35172215E300EDFE11 /* DDSecondViewController.m in Sources */,
+				53D9CD35172215E300EDFE11 /* DDListDeputadosViewController.m in Sources */,
 				53D9CD5A1722188D00EDFE11 /* Model.xcdatamodeld in Sources */,
 				53ED93CD17222A9400208C44 /* Deputado.m in Sources */,
 				53ED93D017222A9500208C44 /* Ranking.m in Sources */,
@@ -554,6 +583,7 @@
 				53ED950217222CE200208C44 /* MagicalRecord+ShorthandSupport.m in Sources */,
 				53ED950317222CE200208C44 /* MagicalRecord.m in Sources */,
 				53ED957A172236C600208C44 /* RankingViewController.m in Sources */,
+				53ED95821722493800208C44 /* DDDetalheViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -666,6 +696,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/MeuDeputado/External/MagicalRecord/Project Files/iOS App Unit Tests/Frameworks\"",
 					"\"$(SRCROOT)/MeuDeputado/External/MagicalRecord/Project Files/Mac App Unit Tests/Frameworks\"",
+					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MeuDeputado/MeuDeputado-Prefix.pch";
@@ -675,6 +706,7 @@
 					"\"$(SRCROOT)/MeuDeputado/External/MagicalRecord/Project Files/iOS App Unit Tests/Frameworks/OCMockLibrary\"",
 					"\"$(SRCROOT)/MeuDeputado/External/MagicalRecord/Project Files/Mac App Unit Tests/Frameworks/OCMockLibrary\"",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -687,6 +719,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/MeuDeputado/External/MagicalRecord/Project Files/iOS App Unit Tests/Frameworks\"",
 					"\"$(SRCROOT)/MeuDeputado/External/MagicalRecord/Project Files/Mac App Unit Tests/Frameworks\"",
+					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MeuDeputado/MeuDeputado-Prefix.pch";
@@ -696,6 +729,7 @@
 					"\"$(SRCROOT)/MeuDeputado/External/MagicalRecord/Project Files/iOS App Unit Tests/Frameworks/OCMockLibrary\"",
 					"\"$(SRCROOT)/MeuDeputado/External/MagicalRecord/Project Files/Mac App Unit Tests/Frameworks/OCMockLibrary\"",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

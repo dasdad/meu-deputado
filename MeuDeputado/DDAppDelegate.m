@@ -8,8 +8,6 @@
 
 #import "DDAppDelegate.h"
 #import "Deputado.h"
-#import "MagicalRecordShorthand.h"
-#import "NSManagedObjectModel+MagicalRecord.h"
 
 @implementation DDAppDelegate
 
@@ -17,8 +15,39 @@
 {
     [MagicalRecord setupCoreDataStackWithAutoMigratingSqliteStoreNamed:@"model.sqlite"];
     
+    NSDateFormatter* myFormatter = [[NSDateFormatter alloc] init];
+    [myFormatter setDateFormat:@"dd/MM/yyyy"];
+    NSDate* myDate = [myFormatter dateFromString:@"25/12/1924"];
+    
     Deputado *deputado = [Deputado MR_createEntity];
     deputado.nome = @"nome";
+    deputado.email = @"nome@gov.com.br";
+    deputado.estado = @"SAO PAULO";
+    deputado.favorito = 0;
+    deputado.foto = @"http://t1.gstatic.com/images?q=tbn:ANd9GcS9fMG_4SWrp_jOwYWmeFWhKpDkNbvFXH4kPIWToqNTovCJYCUTFA";
+    deputado.nascimento = myDate;
+    deputado.partido = @"PT";
+    deputado.presenca = [[NSNumber alloc] initWithInt:114];
+    deputado.telefone = @"93212-5234";
+    deputado.numeDeSessoes = [[NSNumber alloc]initWithInt:500];
+    deputado.nomeParlamentar = @"nome_parlamentar";
+    deputado.gabinete = @"testesteste";
+    deputado.numDeFaltas = [[NSNumber alloc]initWithInt:386];
+    
+    deputado = [Deputado MR_createEntity];
+    deputado.nome = @"nome2";
+    deputado.email = @"nome2@gov.com.br";
+    deputado.estado = @"RJ";
+    deputado.favorito = 0;
+    deputado.foto = @"http://t1.gstatic.com/images?q=tbn:ANd9GcS9fMG_4SWrp_jOwYWmeFWhKpDkNbvFXH4kPIWToqNTovCJYCUTFA";
+    deputado.nascimento = myDate;
+    deputado.partido = @"PSDB";
+    deputado.presenca = [[NSNumber alloc] initWithInt:200];
+    deputado.telefone = @"93234-2434";
+    deputado.numeDeSessoes = [[NSNumber alloc]initWithInt:500];
+    deputado.nomeParlamentar = @"nome_parlamentar2";
+    deputado.gabinete = @"testesteste2";
+    deputado.numDeFaltas = [[NSNumber alloc]initWithInt:300];
     
     NSArray *deputados = [Deputado MR_findAll];
     NSLog(@"Contador %d", [deputados count]);
