@@ -14,7 +14,8 @@
 
 @implementation RankingViewController
 
-
+@synthesize arrayDeputadosMelhores;
+@synthesize arrayDeputadosPiores;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -28,7 +29,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    
+    self.arrayDeputadosMelhores = [Ranking MR_findByAttribute:@"rank" withValue:[NSNumber numberWithInteger:1] andOrderBy:@"ordem" ascending:YES];
+    self.arrayDeputadosPiores = [Ranking MR_findByAttribute:@"rank" withValue:[NSNumber numberWithInteger:0] andOrderBy:@"ordem" ascending:YES];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -44,25 +47,43 @@
 
 #pragma mark - Table view data source
 
+-(NSString *) tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    
+    if (section == 0) {
+        return @"Piores";
+    }
+    else {
+        return @"Melhores";
+    }
+    
+}
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return 10;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
+    static NSString *CellIdentifier = @"deputadoCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
+    Deputado *deputado;
+    if (indexPath.section ==0 ) {
+       deputado = [self.arrayDeputadosPiores objectAtIndex:indexPath.row];
+    }
+    else {
+       deputado = [self.arrayDeputadosMelhores objectAtIndex:indexPath.row];
+    }
+    
+    cell.textLabel.text = deputado.nome;
     // Configure the cell...
     
     return cell;
@@ -118,6 +139,8 @@
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
+    
+    
 }
 
 @end

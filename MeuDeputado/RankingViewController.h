@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Deputado.h"
+#import "Ranking.h"
 
 @interface RankingViewController : UITableViewController
+
+@property (strong, nonatomic) NSArray *arrayDeputadosMelhores;
+@property (strong, nonatomic) NSArray *arrayDeputadosPiores;
 
 @end

@@ -10,6 +10,7 @@
 #import "Deputado.h"
 #import "MagicalRecordShorthand.h"
 #import "NSManagedObjectModel+MagicalRecord.h"
+#import "Ranking.h"
 
 @implementation DDAppDelegate
 
@@ -17,11 +18,20 @@
 {
     [MagicalRecord setupCoreDataStackWithAutoMigratingSqliteStoreNamed:@"model.sqlite"];
     
-    Deputado *deputado = [Deputado MR_createEntity];
-    deputado.nome = @"nome";
+    for (NSInteger i =0 ; i < 10; i++) {
+        
+        Deputado *deputado = [Deputado MR_createEntity];
+        deputado.nome = [NSString stringWithFormat:@"Deputado %d", i];
+    }
     
-    NSArray *deputados = [Deputado MR_findAll];
-    NSLog(@"Contador %d", [deputados count]);
+    for (NSInteger i =0 ; i < 20; i++) {
+        
+        Ranking *ranking = [Ranking MR_createEntity];
+        ranking.nome = [NSString stringWithFormat:@"Deputado %d", i];
+        ranking.ordem = [NSNumber numberWithInteger:i];
+        ranking.rank = [NSNumber numberWithInteger:i/10];
+    }
+    
     return YES;
 }
 							
