@@ -58,6 +58,7 @@
 		53ED950217222CE200208C44 /* MagicalRecord+ShorthandSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 53ED940E17222CE100208C44 /* MagicalRecord+ShorthandSupport.m */; };
 		53ED950317222CE200208C44 /* MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 53ED941017222CE100208C44 /* MagicalRecord.m */; };
 		53ED957717222F4500208C44 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53ED957617222F4500208C44 /* CoreData.framework */; };
+		53ED957A172236C600208C44 /* RankingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53ED9579172236C600208C44 /* RankingViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -159,6 +160,8 @@
 		53ED941117222CE100208C44 /* MagicalRecordShorthand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicalRecordShorthand.h; sourceTree = "<group>"; };
 		53ED941217222CE100208C44 /* CoreData+MagicalRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CoreData+MagicalRecord.h"; sourceTree = "<group>"; };
 		53ED957617222F4500208C44 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		53ED9578172236C600208C44 /* RankingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RankingViewController.h; path = MeuDeputado/RankingViewController.h; sourceTree = "<group>"; };
+		53ED9579172236C600208C44 /* RankingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RankingViewController.m; path = MeuDeputado/RankingViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +192,8 @@
 		53D9CD05172215E300EDFE11 = {
 			isa = PBXGroup;
 			children = (
+				53ED9578172236C600208C44 /* RankingViewController.h */,
+				53ED9579172236C600208C44 /* RankingViewController.m */,
 				53D9CD17172215E300EDFE11 /* MeuDeputado */,
 				53D9CD46172215E300EDFE11 /* MeuDeputadoTests */,
 				53D9CD10172215E300EDFE11 /* Frameworks */,
@@ -548,6 +553,7 @@
 				53ED950117222CE200208C44 /* MagicalRecord+Setup.m in Sources */,
 				53ED950217222CE200208C44 /* MagicalRecord+ShorthandSupport.m in Sources */,
 				53ED950317222CE200208C44 /* MagicalRecord.m in Sources */,
+				53ED957A172236C600208C44 /* RankingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
