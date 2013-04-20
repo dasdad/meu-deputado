@@ -11,6 +11,8 @@
 #import "MagicalRecordShorthand.h"
 #import "NSManagedObjectModel+MagicalRecord.h"
 
+#import "DDServerConnector.h"
+
 @implementation DDAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -22,6 +24,9 @@
     
     NSArray *deputados = [Deputado MR_findAll];
     NSLog(@"Contador %d", [deputados count]);
+    
+    [DDServerConnector test];
+    
     return YES;
 }
 							
