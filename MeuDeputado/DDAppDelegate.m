@@ -11,10 +11,12 @@
 #import "MagicalRecordShorthand.h"
 #import "NSManagedObjectModel+MagicalRecord.h"
 #import "Ranking.h"
-
 #import "DDServerConnector.h"
 
 @implementation DDAppDelegate
+
+
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -24,12 +26,14 @@
         
         Deputado *deputado = [Deputado MR_createEntity];
         deputado.nome = [NSString stringWithFormat:@"Deputado %d", i];
+
     }
     
     for (NSInteger i =0 ; i < 20; i++) {
         
         Ranking *ranking = [Ranking MR_createEntity];
-        ranking.nome = [NSString stringWithFormat:@"Deputado %d", i];
+       
+        ranking.nome = [NSString stringWithFormat:@"Nome %@ ", ranking.nome];
         ranking.ordem = [NSNumber numberWithInteger:i];
         ranking.rank = [NSNumber numberWithInteger:i/10];
     }
